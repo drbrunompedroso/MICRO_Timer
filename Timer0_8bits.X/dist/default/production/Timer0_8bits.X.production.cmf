@@ -1,0 +1,759 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 E2 E2 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+$dist/default/production\Timer0_8bits.X.production.o
+intcodelo CODE 0 18 18 CA 1 2
+cinit CODE 0 11D2 11D2 26 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 1044 1044 6E 1 2
+text1 CODE 0 10B2 10B2 4E 1 2
+text2 CODE 0 1100 1100 4E 1 2
+text3 CODE 0 B96 B96 14C 1 2
+text4 CODE 0 62E 62E 27C 1 2
+text5 CODE 0 FCA FCA 7A 1 2
+text6 CODE 0 114E 114E 44 1 2
+text7 CODE 0 DC6 DC6 CA 1 2
+text8 CODE 0 1262 1262 2 1 2
+text9 CODE 0 1192 1192 40 1 2
+text10 CODE 0 A32 A32 164 1 2
+text11 CODE 0 8AA 8AA 188 1 2
+text12 CODE 0 E90 E90 A0 1 2
+text13 CODE 0 1218 1218 1E 1 2
+text14 CODE 0 F30 F30 9A 1 2
+text15 CODE 0 CE2 CE2 E4 1 2
+text16 CODE 0 11F8 11F8 20 1 2
+text17 CODE 0 1236 1236 E 1 2
+text18 CODE 0 1244 1244 E 1 2
+text19 CODE 0 125C 125C 6 1 2
+text20 CODE 0 1252 1252 A 1 2
+cstackCOMRAM COMRAM 1 1 1 6F 1 1
+temp COMRAM 1 7B 7B 1 1 1
+bssBANK0 BANK0 1 80 80 30 1 1
+smallconst SMALLCONST 0 600 600 2E 1 2
+bssCOMRAM COMRAM 1 70 70 B 1 1
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM B0-5FF 1
+SFR F80-FFF 1
+BANK0 B0-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-17 1
+CONST E6-5FF 1
+CONST 1264-7FFF 1
+SMALLCONST 1264-7FFF 1
+CODE 4-17 1
+CODE E6-5FF 1
+CODE 1264-7FFF 1
+BIGRAM 7C-7F 1
+BIGRAM B0-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 7C-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1264-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Timer0_8bits.X.production.o
+18 intcodelo CODE >4629:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+18 intcodelo CODE >127:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+26 intcodelo CODE >129:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+34 intcodelo CODE >131:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+38 intcodelo CODE >132:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+54 intcodelo CODE >134:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+5C intcodelo CODE >135:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+7C intcodelo CODE >136:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+80 intcodelo CODE >137:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+9C intcodelo CODE >139:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+A0 intcodelo CODE >140:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+C4 intcodelo CODE >141:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+CC intcodelo CODE >143:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+CC intcodelo CODE >144:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+D0 intcodelo CODE >145:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+D2 intcodelo CODE >147:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1252 text20 CODE >84:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1252 text20 CODE >86:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1256 text20 CODE >87:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+125A text20 CODE >88:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+125C text19 CODE >90:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+125C text19 CODE >92:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1260 text19 CODE >101:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1244 text18 CODE >77:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1244 text18 CODE >79:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1248 text18 CODE >80:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+124C text18 CODE >81:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1250 text18 CODE >82:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1236 text17 CODE >102:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1236 text17 CODE >105:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+123A text17 CODE >113:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1242 text17 CODE >125:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+11F8 text16 CODE >34:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+11FA text16 CODE >36:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+1214 text16 CODE >37:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+1216 text16 CODE >38:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+CE2 text15 CODE >40:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+CE4 text15 CODE >42:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+CFC text15 CODE >43:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D16 text15 CODE >44:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D32 text15 CODE >45:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D4C text15 CODE >47:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D4E text15 CODE >48:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D50 text15 CODE >50:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D58 text15 CODE >52:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D70 text15 CODE >53:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+D8A text15 CODE >54:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+DA6 text15 CODE >55:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+DC0 text15 CODE >57:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+DC2 text15 CODE >58:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+DC4 text15 CODE >59:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F30 text14 CODE >3:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F30 text14 CODE >7:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F34 text14 CODE >8:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F36 text14 CODE >9:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F38 text14 CODE >10:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F3C text14 CODE >11:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F3E text14 CODE >12:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F40 text14 CODE >14:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F50 text14 CODE >16:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F54 text14 CODE >18:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F5A text14 CODE >19:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F68 text14 CODE >20:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F7A text14 CODE >22:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F80 text14 CODE >23:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F88 text14 CODE >24:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F8E text14 CODE >25:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F96 text14 CODE >26:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F9C text14 CODE >27:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+FAC text14 CODE >28:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+FB2 text14 CODE >29:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+FBA text14 CODE >30:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+FC0 text14 CODE >31:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+FC8 text14 CODE >32:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+1218 text13 CODE >61:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+121A text13 CODE >63:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+1224 text13 CODE >64:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+122C text13 CODE >65:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+122E text13 CODE >66:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+1234 text13 CODE >67:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+E90 text12 CODE >75:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+E92 text12 CODE >79:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EA2 text12 CODE >81:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EA8 text12 CODE >82:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EAC text12 CODE >83:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EBE text12 CODE >85:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EC4 text12 CODE >87:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+ECE text12 CODE >89:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+ED2 text12 CODE >91:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EFA text12 CODE >92:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+EFE text12 CODE >89:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+F2E text12 CODE >94:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\LCD4b.c
+8AA text11 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+8AA text11 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+8AE text11 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+8BC text11 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+8DC text11 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+8E0 text11 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+8EE text11 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+90E text11 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+912 text11 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+91E text11 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+93C text11 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+940 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+944 text11 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+956 text11 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+958 text11 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+966 text11 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+978 text11 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+9A6 text11 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+9C6 text11 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+9C8 text11 CODE >37:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+9DA text11 CODE >38:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+9E0 text11 CODE >40:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+9F0 text11 CODE >41:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+A10 text11 CODE >42:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+A30 text11 CODE >43:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aodiv.c
+A32 text10 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A32 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A36 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A44 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A64 text10 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A68 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A76 text10 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+A96 text10 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+AB4 text10 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+AB8 text10 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+ABC text10 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+ACE text10 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+AD0 text10 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+ADE text10 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B0C text10 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B2C text10 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B3E text10 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B44 text10 CODE >33:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B54 text10 CODE >34:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B74 text10 CODE >35:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+B94 text10 CODE >36:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\aomod.c
+1192 text9 CODE >1:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+1192 text9 CODE >3:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+11D0 text9 CODE >4:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\abs.c
+1262 text8 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+1262 text8 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+DC6 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+DC6 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+DEA text7 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+DF0 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+DF4 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+E48 text7 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+E7C text7 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+E8E text7 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+114E text6 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+114E text6 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1156 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+115A text6 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+116C text6 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1170 text6 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+1190 text6 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+FCA text5 CODE >133:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FCA text5 CODE >145:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FEC text5 CODE >146:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FF4 text5 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+FF8 text5 CODE >148:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+100C text5 CODE >149:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1010 text5 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+102E text5 CODE >156:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1042 text5 CODE >164:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+62E text4 CODE >443:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+62E text4 CODE >450:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+64E text4 CODE >451:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+662 text4 CODE >452:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+672 text4 CODE >453:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+692 text4 CODE >462:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+6C0 text4 CODE >463:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+6C8 text4 CODE >464:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+6D8 text4 CODE >469:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+6DE text4 CODE >470:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+706 text4 CODE >471:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+706 text4 CODE >480:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+70E text4 CODE >481:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+714 text4 CODE >482:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+718 text4 CODE >487:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+71E text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+74A text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+74E text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+752 text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+756 text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+75A text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+75E text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+762 text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+766 text4 CODE >488:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7A0 text4 CODE >489:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7A6 text4 CODE >490:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7AC text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7CC text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7D0 text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7D4 text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7D8 text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7DC text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7E0 text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7E4 text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+7E8 text4 CODE >491:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+810 text4 CODE >482:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+862 text4 CODE >495:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+872 text4 CODE >496:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+878 text4 CODE >497:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+888 text4 CODE >501:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+8A8 text4 CODE >502:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B96 text3 CODE >1007:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B96 text3 CODE >1019:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BBA text3 CODE >1020:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BC8 text3 CODE >1022:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BD4 text3 CODE >1023:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BD8 text3 CODE >1117:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BE8 text3 CODE >1187:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C20 text3 CODE >1230:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C5A text3 CODE >1232:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C76 text3 CODE >1233:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+CA6 text3 CODE >1509:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+CB8 text3 CODE >1514:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+CE0 text3 CODE >1517:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1100 text2 CODE >1520:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1100 text2 CODE >1525:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1108 text2 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+110C text2 CODE >1533:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1128 text2 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1144 text2 CODE >1538:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+114C text2 CODE >1543:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+10B2 text1 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10B2 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10BA text1 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10C2 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10CA text1 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10D2 text1 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10EE text1 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+10FE text1 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1044 text0 CODE >149:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1044 text0 CODE >151:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1048 text0 CODE >152:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+104C text0 CODE >153:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1050 text0 CODE >154:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1054 text0 CODE >155:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1058 text0 CODE >157:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+106A text0 CODE >158:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+107C text0 CODE >162:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+1098 text0 CODE >163:C:\Users\profb\OneDrive - Etec Centro Paula Souza\Projetos\Microcontroladores\MICRO\5 - Timer\Timer0_8bits.X\Program_main.c
+11D2 cinit CODE >827:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11D2 cinit CODE >829:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11D2 cinit CODE >832:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11D2 cinit CODE >864:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11D6 cinit CODE >865:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11D8 cinit CODE >866:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11D8 cinit CODE >867:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11DA cinit CODE >868:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11DC cinit CODE >869:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11DE cinit CODE >872:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11E2 cinit CODE >873:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11E4 cinit CODE >874:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11E4 cinit CODE >875:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11E6 cinit CODE >876:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11E8 cinit CODE >877:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11EA cinit CODE >883:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11EA cinit CODE >885:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11EC cinit CODE >886:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11EE cinit CODE >888:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11F0 cinit CODE >889:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11F2 cinit CODE >890:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+11F4 cinit CODE >891:C:\Users\profb\AppData\Local\Temp\xcAsqhk.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Timer0_8bits.X.production.o
+__Hspace_0 1264 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hspace_1 B0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Timer0_8bits.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Timer0_8bits.X.production.o
+?_abs 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+?_vfprintf 55 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+_config_TIMER0 1236 0 CODE 0 text17 dist/default/production\Timer0_8bits.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\Timer0_8bits.X.production.o
+_TMR0 FD6 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+_dbuf 80 0 BANK0 1 bssBANK0 dist/default/production\Timer0_8bits.X.production.o
+_dtoa 62E 0 CODE 0 text4 dist/default/production\Timer0_8bits.X.production.o
+_main 1044 0 CODE 0 text0 dist/default/production\Timer0_8bits.X.production.o
+_prec 72 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+abs@a 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+btemp 7B 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+pad@i 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+pad@p 19 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+pad@w 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+start E2 0 CODE 0 init C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+___aomod@counter 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+pad@fp 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__end_of_config_INTERRUPT 1262 0 CODE 0 text19 dist/default/production\Timer0_8bits.X.production.o
+set_bit@comp 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hpowerup E2 0 CODE 0 powerup dist/default/production\Timer0_8bits.X.production.o
+__end_of_vfpfcnvrt CE2 0 CODE 0 text3 dist/default/production\Timer0_8bits.X.production.o
+ttemp5 7C 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+ttemp6 7F 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+ttemp7 83 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+__end_of_lcd_write F30 0 CODE 0 text12 dist/default/production\Timer0_8bits.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+intlevel0 0 0 CODE 0 text C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+intlevel1 0 0 CODE 0 text C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+intlevel2 0 0 CODE 0 text C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+intlevel3 0 0 CODE 0 text C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Timer0_8bits.X.production.o
+wtemp8 7C 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\Timer0_8bits.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\Timer0_8bits.X.production.o
+_vfpfcnvrt B96 0 CODE 0 text3 dist/default/production\Timer0_8bits.X.production.o
+dtoa@fp 20 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__end_of_config_IO 1252 0 CODE 0 text18 dist/default/production\Timer0_8bits.X.production.o
+_lcd_write E90 0 CODE 0 text12 dist/default/production\Timer0_8bits.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__end_of_lcd_cmd DC6 0 CODE 0 text15 dist/default/production\Timer0_8bits.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\Timer0_8bits.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Timer0_8bits.X.production.o
+_config_IO 1244 0 CODE 0 text18 dist/default/production\Timer0_8bits.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\Timer0_8bits.X.production.o
+__Hintcodelo E2 0 CODE 0 intcodelo dist/default/production\Timer0_8bits.X.production.o
+_intern_TMR0 18 0 CODE 0 intcodelo dist/default/production\Timer0_8bits.X.production.o
+__end_of___aodiv A32 0 CODE 0 text11 dist/default/production\Timer0_8bits.X.production.o
+__end_of___aomod B96 0 CODE 0 text10 dist/default/production\Timer0_8bits.X.production.o
+___aodiv@quotient 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+___aomod@dividend 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\Timer0_8bits.X.production.o
+___aomod@divisor D 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+start_initialization 11D2 0 CODE 0 cinit dist/default/production\Timer0_8bits.X.production.o
+_OSCCON FD3 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\Timer0_8bits.X.production.o
+__end_of_set_bit 1218 0 CODE 0 text16 dist/default/production\Timer0_8bits.X.production.o
+__end_of_config_TIMER0 1244 0 CODE 0 text17 dist/default/production\Timer0_8bits.X.production.o
+_TRISEbits F96 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+set_bit@cmd 6 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_dtoa$967 32 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+fputc@fp 7 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+fputs@fp 10 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\Timer0_8bits.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\Timer0_8bits.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\Timer0_8bits.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\Timer0_8bits.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\Timer0_8bits.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\Timer0_8bits.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\Timer0_8bits.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\Timer0_8bits.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\Timer0_8bits.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\Timer0_8bits.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\Timer0_8bits.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\Timer0_8bits.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\Timer0_8bits.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\Timer0_8bits.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\Timer0_8bits.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\Timer0_8bits.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\Timer0_8bits.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\Timer0_8bits.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\Timer0_8bits.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\Timer0_8bits.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\Timer0_8bits.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\Timer0_8bits.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\Timer0_8bits.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\Timer0_8bits.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Timer0_8bits.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\Timer0_8bits.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Timer0_8bits.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+__end_of_sprintf 1100 0 CODE 0 text1 dist/default/production\Timer0_8bits.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\Timer0_8bits.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\Timer0_8bits.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\Timer0_8bits.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\Timer0_8bits.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\Timer0_8bits.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\Timer0_8bits.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\Timer0_8bits.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\Timer0_8bits.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\Timer0_8bits.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\Timer0_8bits.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\Timer0_8bits.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\Timer0_8bits.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\Timer0_8bits.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\Timer0_8bits.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\Timer0_8bits.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\Timer0_8bits.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\Timer0_8bits.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\Timer0_8bits.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\Timer0_8bits.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\Timer0_8bits.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\Timer0_8bits.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\Timer0_8bits.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\Timer0_8bits.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\Timer0_8bits.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\Timer0_8bits.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\Timer0_8bits.X.production.o
+lcd_write@col B 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+lcd_write@end E 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+lcd_write@lin F 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+lcd_write@str C 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\Timer0_8bits.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\Timer0_8bits.X.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_PORTDbits F83 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\Timer0_8bits.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\Timer0_8bits.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\Timer0_8bits.X.production.o
+__Hinit E6 0 CODE 0 init dist/default/production\Timer0_8bits.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\Timer0_8bits.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\Timer0_8bits.X.production.o
+__Htemp 7C 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\Timer0_8bits.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\Timer0_8bits.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\Timer0_8bits.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\Timer0_8bits.X.production.o
+__Linit E2 0 CODE 0 init dist/default/production\Timer0_8bits.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\Timer0_8bits.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\Timer0_8bits.X.production.o
+__Ltemp 7B 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\Timer0_8bits.X.production.o
+___aodiv@counter 15 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+___aomod@sign 16 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+int$flags 7B 0 COMRAM 1 temp dist/default/production\Timer0_8bits.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\Timer0_8bits.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\Timer0_8bits.X.production.o
+__S0 1264 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__S1 B0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_abs 1192 0 CODE 0 text9 dist/default/production\Timer0_8bits.X.production.o
+_pad FCA 0 CODE 0 text5 dist/default/production\Timer0_8bits.X.production.o
+___aodiv@sign 16 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Timer0_8bits.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\Timer0_8bits.X.production.o
+sprintf@fmt 5F 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__end_of_abs 11D2 0 CODE 0 text9 dist/default/production\Timer0_8bits.X.production.o
+__end_of_pad 1044 0 CODE 0 text5 dist/default/production\Timer0_8bits.X.production.o
+_lcd_init F30 0 CODE 0 text14 dist/default/production\Timer0_8bits.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\Timer0_8bits.X.production.o
+_config_FOSC 1252 0 CODE 0 text20 dist/default/production\Timer0_8bits.X.production.o
+_lcd_cmd CE2 0 CODE 0 text15 dist/default/production\Timer0_8bits.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\Timer0_8bits.X.production.o
+_timer_500ms 78 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\Timer0_8bits.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\Timer0_8bits.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Timer0_8bits.X.production.o
+__end_of_lcd_init FCA 0 CODE 0 text14 dist/default/production\Timer0_8bits.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\Timer0_8bits.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\Timer0_8bits.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\Timer0_8bits.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\Timer0_8bits.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\Timer0_8bits.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\Timer0_8bits.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\Timer0_8bits.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\Timer0_8bits.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\Timer0_8bits.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\Timer0_8bits.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\Timer0_8bits.X.production.o
+vfpfcnvrt@fmt 45 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+_lcd_send_byte 1218 0 CODE 0 text13 dist/default/production\Timer0_8bits.X.production.o
+lcd_send_byte@data 9 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+pad@buf 17 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__ptext10 A32 0 CODE 0 text10 dist/default/production\Timer0_8bits.X.production.o
+__ptext11 8AA 0 CODE 0 text11 dist/default/production\Timer0_8bits.X.production.o
+__ptext12 E90 0 CODE 0 text12 dist/default/production\Timer0_8bits.X.production.o
+__ptext13 1218 0 CODE 0 text13 dist/default/production\Timer0_8bits.X.production.o
+__ptext14 F30 0 CODE 0 text14 dist/default/production\Timer0_8bits.X.production.o
+__ptext15 CE2 0 CODE 0 text15 dist/default/production\Timer0_8bits.X.production.o
+__ptext16 11F8 0 CODE 0 text16 dist/default/production\Timer0_8bits.X.production.o
+__ptext17 1236 0 CODE 0 text17 dist/default/production\Timer0_8bits.X.production.o
+__ptext18 1244 0 CODE 0 text18 dist/default/production\Timer0_8bits.X.production.o
+__ptext19 125C 0 CODE 0 text19 dist/default/production\Timer0_8bits.X.production.o
+__ptext20 1252 0 CODE 0 text20 dist/default/production\Timer0_8bits.X.production.o
+___aodiv 8AA 0 CODE 0 text11 dist/default/production\Timer0_8bits.X.production.o
+___aomod A32 0 CODE 0 text10 dist/default/production\Timer0_8bits.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Timer0_8bits.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\Timer0_8bits.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\Timer0_8bits.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\Timer0_8bits.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\Timer0_8bits.X.production.o
+__end_of_intern_TMR0 E2 0 CODE 0 intcodelo dist/default/production\Timer0_8bits.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Timer0_8bits.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\Timer0_8bits.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+_timer_1000ms 76 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+stacklo 0 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+__Lintcode 4 0 CODE 0 intcode dist/default/production\Timer0_8bits.X.production.o
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\Timer0_8bits.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\Timer0_8bits.X.production.o
+_set_bit 11F8 0 CODE 0 text16 dist/default/production\Timer0_8bits.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__pbssCOMRAM 70 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+lcd_cmd@cmd 8 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+___aodiv@divisor D 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+vfpfcnvrt@convarg 4B 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+___aodiv@dividend 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+end_of_initialization 11EA 0 CODE 0 cinit dist/default/production\Timer0_8bits.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\Timer0_8bits.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\Timer0_8bits.X.production.o
+fputc@c 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+fputs@c 12 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+fputs@i 13 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+fputs@s E 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+?___aodiv 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+?___aomod 5 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+vfprintf@fmt 57 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\Timer0_8bits.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\Timer0_8bits.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\Timer0_8bits.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\Timer0_8bits.X.production.o
+__pcinit 11D2 0 CODE 0 cinit dist/default/production\Timer0_8bits.X.production.o
+vfpfcnvrt@ap 47 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+vfpfcnvrt@cp 53 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+vfpfcnvrt@fp 43 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__ptext0 1044 0 CODE 0 text0 dist/default/production\Timer0_8bits.X.production.o
+__ptext1 10B2 0 CODE 0 text1 dist/default/production\Timer0_8bits.X.production.o
+__ptext2 1100 0 CODE 0 text2 dist/default/production\Timer0_8bits.X.production.o
+__ptext3 B96 0 CODE 0 text3 dist/default/production\Timer0_8bits.X.production.o
+__ptext4 62E 0 CODE 0 text4 dist/default/production\Timer0_8bits.X.production.o
+__ptext5 FCA 0 CODE 0 text5 dist/default/production\Timer0_8bits.X.production.o
+__ptext6 114E 0 CODE 0 text6 dist/default/production\Timer0_8bits.X.production.o
+__ptext7 DC6 0 CODE 0 text7 dist/default/production\Timer0_8bits.X.production.o
+__ptext8 1262 0 CODE 0 text8 dist/default/production\Timer0_8bits.X.production.o
+__ptext9 1192 0 CODE 0 text9 dist/default/production\Timer0_8bits.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\Timer0_8bits.X.production.o
+vfprintf@ap 59 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+vfprintf@fp 55 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+vfprintf@cfmt 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\Timer0_8bits.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\Timer0_8bits.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\Timer0_8bits.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\Timer0_8bits.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\Timer0_8bits.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\Timer0_8bits.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\Timer0_8bits.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\Timer0_8bits.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\Timer0_8bits.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\Timer0_8bits.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\Timer0_8bits.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+_sprintf 10B2 0 CODE 0 text1 dist/default/production\Timer0_8bits.X.production.o
+_vfprintf 1100 0 CODE 0 text2 dist/default/production\Timer0_8bits.X.production.o
+__Lpowerup E2 0 CODE 0 powerup dist/default/production\Timer0_8bits.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\Timer0_8bits.X.production.o
+lcd_init@i A 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+sprintf@ap 63 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\Timer0_8bits.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\Timer0_8bits.X.production.o
+__end_of_vfprintf 114E 0 CODE 0 text2 dist/default/production\Timer0_8bits.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+___heap_lo 0 0 ABS 0 - C:\Users\profb\AppData\Local\Temp\xcAsqhk.o
+___param_bank 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Timer0_8bits.X.production.o
+__end_of__initialization 11EA 0 CODE 0 cinit dist/default/production\Timer0_8bits.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\Timer0_8bits.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\Timer0_8bits.X.production.o
+lcd_send_byte@level A 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__end_of_lcd_send_byte 1236 0 CODE 0 text13 dist/default/production\Timer0_8bits.X.production.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\Timer0_8bits.X.production.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+sprintf@f 65 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+sprintf@s 5D 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__end_of_dtoa 8AA 0 CODE 0 text4 dist/default/production\Timer0_8bits.X.production.o
+__end_of_main 10B2 0 CODE 0 text0 dist/default/production\Timer0_8bits.X.production.o
+_bufferLCD A0 0 BANK0 1 bssBANK0 dist/default/production\Timer0_8bits.X.production.o
+_config_INTERRUPT 125C 0 CODE 0 text19 dist/default/production\Timer0_8bits.X.production.o
+__end_of_fputc E90 0 CODE 0 text7 dist/default/production\Timer0_8bits.X.production.o
+__end_of_fputs 1192 0 CODE 0 text6 dist/default/production\Timer0_8bits.X.production.o
+?_sprintf 5D 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__end_of_putch 1264 0 CODE 0 text8 dist/default/production\Timer0_8bits.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\Timer0_8bits.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\Timer0_8bits.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\Timer0_8bits.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\Timer0_8bits.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\Timer0_8bits.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\Timer0_8bits.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\Timer0_8bits.X.production.o
+_flags 7A 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+_fputc DC6 0 CODE 0 text7 dist/default/production\Timer0_8bits.X.production.o
+_fputs 114E 0 CODE 0 text6 dist/default/production\Timer0_8bits.X.production.o
+_putch 1262 0 CODE 0 text8 dist/default/production\Timer0_8bits.X.production.o
+_width 70 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__initialization 11D2 0 CODE 0 cinit dist/default/production\Timer0_8bits.X.production.o
+__pbssBANK0 80 0 BANK0 1 bssBANK0 dist/default/production\Timer0_8bits.X.production.o
+__end_of_config_FOSC 125C 0 CODE 0 text20 dist/default/production\Timer0_8bits.X.production.o
+_counter 74 0 COMRAM 1 bssCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\Timer0_8bits.X.production.o
+__Hsmallconst 62E 0 SMALLCONST 0 smallconst dist/default/production\Timer0_8bits.X.production.o
+dtoa@d 22 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+dtoa@i 40 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+dtoa@n 38 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+dtoa@p 34 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+dtoa@s 42 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+dtoa@w 36 0 COMRAM 1 cstackCOMRAM dist/default/production\Timer0_8bits.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\Timer0_8bits.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\Timer0_8bits.X.production.o
+__Hintcode 4 0 CODE 0 intcode dist/default/production\Timer0_8bits.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 CE 1
+text4 0 62E 62E C36 1
+cstackCOMRAM 1 1 1 7B 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 80 80 30 1
+smallconst 0 600 600 2E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
